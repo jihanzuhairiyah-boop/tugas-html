@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <title>Jihan Zuhairiyah Al Asy'ari - Profil Diri</title>
+    <style>
+        .btn-kirim {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        /* Styling Foto Profil dengan Rasio 9:16 (Berdiri / Vertikal) */
+        .foto-profil {
+            width: 225px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div>
+            <img src="priv/myself.JPG" alt="Foto Jihan Zuhairiyah Al Asy'ari" class="foto-profil">
+        </div>
+        
+        <div>
+            <h1>Jihan Zuhairiyah Al Asy'ari</h1>
+            <p>Mahasiswa Sistem Informasi yang sedang belajar, berusaha, dan terus berkembang walaupun kadang berkembangnya sambil ngeluh 😁</p>
+        </div>
+    </header>
+
+    <hr>
+
+    <!-- NAVIGASI -->
+    <nav>
+        <a href="#tentang">Tentang Saya</a> |
+        <a href="#keahlian">Keahlian</a> |
+        <a href="#media">Media Pengenalan Diri</a> |
+        <a href="#fakta">Fakta Menarik</a> |
+        <a href="#kesukaan">Kesukaan</a> |
+        <a href="#buku-tamu">Buku Tamu</a> |
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <!-- 1. TENTANG SAYA -->
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <p>HAOOO! Saya Jihan Zuhairiyah. Saya adalah mahasiswa Sistem Informasi yang sedang berusaha menjalani kehidupan perkuliahan sambil belajar berbagai hal baru. Bagiku, menjadi mahasiswa bukan cuma tentang mengerjakan tugas dan mengejar nilai, tetapi juga tentang belajar mengatur waktu, menghadapi masalah, dan mencoba menjadi versi diri yang lebih baik.</p>
+            <p>Di luar kegiatan kuliah, saya juga mengurus dan mengembangkan usaha orang tua saya, dimana saya diberi amanah sebagai admin di toko botol plastik dan perlengkapan laundry.</p>
+        </section>
+
+        <!-- 2. KEAHLIAN -->
+        <section id="keahlian">
+            <h2>Keahlian</h2>
+            <ul>
+                <li>💻 Memahami dasar-dasar Sistem Informasi dan teknologi</li>
+                <li>🛍️ Mengelola dan mengembangkan usaha</li>
+                <li>💰 Mengatur dan menghitung keuangan usaha</li>
+                <li>📷 Belajar fotografi dan desain grafis</li>
+                <li>📊 Belajar mengolah data dan menggunakan Microsoft Excel</li>
+                <li>🤝 Berkomunikasi dan bekerja sama dengan orang lain</li>
+                <li>Keahlian khusus: menghitung uang berkali-kali karena takut salah 🤑</li>
+            </ul>
+        </section>
+
+        <!-- 3. MULTIMEDIA -->
+        <section id="media">
+            <h2>Media Pengenalan Diri</h2>
+            
+            <!-- Video hoppers.mp4 -->
+            <article>
+                <h3>🎥 Video Pendukung / Favorit</h3>
+                <p>Berikut adalah media berupa film kartun favorit saya</p>
+                <video width="560" height="315" controls>
+                    <source src="priv/hoppers.mp4" type="video/mp4">
+                    Browser kamu tidak mendukung elemen video HTML5.
+                </video>
+            </article>
+
+            <!-- Audio di bawah video -->
+            <article>
+                <h3>🔊 Audio Sambutan</h3>
+                <audio controls>
+                    <source src="priv/where we are.mp3" type="audio/mpeg">
+                    Browser kamu tidak mendukung elemen audio HTML5.
+                </audio>
+            </article>
+        </section>
+
+        <!-- 4. FAKTA MENARIK -->
+        <aside id="fakta">
+            <h3>🔥 FAKTA MENARIK 🔥</h3>
+            <p>Saya suka membaca novel dan menonton film. Genre yang saya sukai adalah misteri, thriller, animasi, action, romance, dan horor. Dan karena genre-genre favorit saya itulah yang membuat saya kesulitan mencari teman untuk nonton bareng di bioskop, yang akhirnya milih nonton sendiri di rumah 😌.</p>
+        </aside>
+
+        <!-- 5. TABEL KESUKAAN (DENGAN COLSPAN) -->
+        <section id="kesukaan">
+            <h2>Sedikit Tentang Kesukaanku</h2>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th colspan="2">Hal yang Menemaniku di Waktu Luang</th>
+                    </tr>
+                    <tr>
+                        <th>Film Favorit</th>
+                        <th>Novel Favorit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. Obsession</td>
+                        <td>1. Cantik itu Luka</td>
+                    </tr>
+                    <tr>
+                        <td>2. Purple Heart</td>
+                        <td>2. Canva</td>
+                    </tr>
+                    <tr>
+                        <td>3. Teach You a Lesson</td>
+                        <td>3. Agatha</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 6. BUKU TAMU / FORM KIRIM PESAN -->
+        <section id="buku-tamu">
+            <h2>Buku Tamu / Kirim Pesan</h2>
+            <p>Silakan tinggalkan pesan atau sapaan melalui formulir interaktif di bawah ini:</p>
+            
+            <form action="#" method="post">
+                <p>
+                    <label for="cari">Cari Topik / Pesan Sebelumnya:</label><br>
+                    <input type="search" id="cari" name="cari" placeholder="Ketik kata kunci...">
+                </p>
+                <p>
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                </p>
+                <p>
+                    <label for="keperluan">Keperluan:</label><br>
+                    <input type="text" id="keperluan" name="keperluan" placeholder="Tuliskan keperluan kamu" required>
+                </p>
+                <p>
+                    <label for="pesan">Pesan:</label><br>
+                    <textarea id="pesan" name="pesan" rows="5" cols="40" placeholder="Tuliskan pesan kamu di sini..." required></textarea>
+                </p>
+                <p>
+                    <button type="submit" class="btn-kirim">Kirim</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- 7. FOOTER / KONTAK -->
+    <footer id="kontak">
+        <h3>Kontak</h3>
+        <p>Sekian perkenalan singkatnya. Kalau mau tahu lebih banyak, ya… kontaknya ada di bawah. 😌</p>
+        <ul>
+            <li>Instagram: <a href="https://instagram.com/jihanzuhairiyah.al" target="_blank">@jihanzuhairiyah.al</a></li>
+            <li>Email: <a href="mailto:jihanzuhairiyah27@gmail.com">jihanzuhairiyah27@gmail.com</a></li>
+        </ul>
+        <p>Jangan cuma kepo sama bos-nya, tapi kepoin juga tokonyaaa.</p>
+        <ul>
+            <li>Tiktok: <a href="https://tiktok.com/@murahbotoljombang" target="_blank">@murahbotoljombang</a></li>
+            <li>Email Toko: <a href="mailto:murahbotoljombang@gmail.com">murahbotoljombang@gmail.com</a></li>
+            <li>Shopee: <a href="https://shopee.co.id/murahbotoljombang431" target="_blank">@murahbotoljombang431</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
