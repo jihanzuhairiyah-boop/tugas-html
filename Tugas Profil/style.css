@@ -116,7 +116,7 @@ h2, h3 {
 
 #keahlian li {
     padding: 8px 0;
-    border-bottom: 1px border-bottom: 1px solid #f0f4f8;
+    border-bottom: 1px solid #f0f4f8;
 }
 
 #keahlian li:last-child {
@@ -132,7 +132,7 @@ h2, h3 {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-top: 100px margin-top: 10px;
+    margin-top: 10px;
 }
 
 #media audio {
