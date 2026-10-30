@@ -13,6 +13,41 @@ body {
     padding: 20px 10px;
 }
 
+.layout {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "content sidebar"
+        "footer footer";
+    grid-template-columns: 1fr 320px; /* Lebar konten utama dan sidebar */
+    grid-template-rows: auto auto 1fr auto;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Memetakan elemen ke Grid Area */
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: content;
+}
+
+aside#fakta {
+    grid-area: sidebar;
+}
+
+footer#kontak {
+    grid-area: footer;
+}
 /* HEADER SECTION */
 header {
     background: linear-gradient(135deg, #1d4ed8, #2563eb);
